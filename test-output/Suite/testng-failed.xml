@@ -4,12 +4,13 @@
   <listeners>
     <listener class-name="com.inetBanking_V122.Utilities.Reporting"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" parallel="methods" name="Test(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
       <class name="com.inetBanking_V122.TestCases.LoginTest">
         <methods>
           <include name="loginTest"/>
+          <include name="loginTest2"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

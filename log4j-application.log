@@ -123,4 +123,144 @@
  2023-08-18 13:29:26,694  INFO [main] ebanking:20 - ENTERED PASSWORD
  2023-08-18 13:29:28,237  INFO [main] ebanking:22 - CLICKED ON LOGIN BUTTON
  2023-08-18 13:29:28,245  INFO [main] ebanking:29 - TestCase is passed
+ 2023-08-21 20:40:51,250  INFO [main] ebanking:15 - URL IS OPENED
+ 2023-08-21 20:40:51,426  INFO [main] ebanking:18 - ENTERED USERNAME
+ 2023-08-21 20:40:51,488  INFO [main] ebanking:20 - ENTERED PASSWORD
+ 2023-08-21 20:40:52,988  INFO [main] ebanking:22 - CLICKED ON LOGIN BUTTON
+ 2023-08-21 20:40:52,997  INFO [main] ebanking:29 - TestCase is passed
+ 2023-08-21 20:46:32,759  INFO [main] ebanking:15 - URL IS OPENED
+ 2023-08-21 20:46:32,986  INFO [main] ebanking:18 - ENTERED USERNAME
+ 2023-08-21 20:46:33,052  INFO [main] ebanking:20 - ENTERED PASSWORD
+ 2023-08-21 20:46:34,510  INFO [main] ebanking:22 - CLICKED ON LOGIN BUTTON
+ 2023-08-21 20:46:34,520  INFO [main] ebanking:29 - TestCase is passed
+ 2023-08-21 21:13:41,989  INFO [main] ebanking:15 - URL IS OPENED
+ 2023-08-21 21:13:42,144  INFO [main] ebanking:18 - ENTERED USERNAME
+ 2023-08-21 21:13:42,186  INFO [main] ebanking:20 - ENTERED PASSWORD
+ 2023-08-21 21:13:44,432  INFO [main] ebanking:22 - CLICKED ON LOGIN BUTTON
+ 2023-08-21 21:13:44,439  INFO [main] ebanking:29 - TestCase is passed
+ 2023-08-21 21:14:15,568  INFO [main] ebanking:15 - URL IS OPENED
+ 2023-08-21 21:14:15,752  INFO [main] ebanking:18 - ENTERED USERNAME
+ 2023-08-21 21:14:15,827  INFO [main] ebanking:20 - ENTERED PASSWORD
+ 2023-08-21 21:14:17,417  INFO [main] ebanking:22 - CLICKED ON LOGIN BUTTON
+ 2023-08-21 21:14:17,425  INFO [main] ebanking:29 - TestCase is passed
+ 2023-08-22 11:00:44,983  INFO [main] ebanking:15 - URL IS OPENED
+ 2023-08-22 11:00:45,168  INFO [main] ebanking:18 - ENTERED USERNAME
+ 2023-08-22 11:00:45,214  INFO [main] ebanking:20 - ENTERED PASSWORD
+ 2023-08-22 11:00:47,312  INFO [main] ebanking:22 - CLICKED ON LOGIN BUTTON
+ 2023-08-22 11:00:47,320  INFO [main] ebanking:29 - TestCase is passed
+ 2023-08-22 14:35:05,738  INFO [main] ebanking:15 - URL IS OPENED
+ 2023-08-22 14:35:06,042  INFO [main] ebanking:18 - ENTERED USERNAME
+ 2023-08-22 14:35:06,126  INFO [main] ebanking:20 - ENTERED PASSWORD
+ 2023-08-22 14:35:07,725  INFO [main] ebanking:22 - CLICKED ON LOGIN BUTTON
+ 2023-08-22 14:35:07,738  INFO [main] ebanking:29 - TestCase is passed
+ 2023-08-22 14:42:34,106  INFO [TestNG-test=Test-2] ebanking:46 - URL IS OPENED
+ 2023-08-22 14:42:35,275  INFO [TestNG-test=Test-1] ebanking:15 - URL IS OPENED
+ 2023-08-22 14:42:35,481  INFO [TestNG-test=Test-2] ebanking:49 - ENTERED USERNAME
+ 2023-08-22 14:42:35,499  INFO [TestNG-test=Test-1] ebanking:18 - ENTERED USERNAME
+ 2023-08-22 14:42:35,526  INFO [TestNG-test=Test-2] ebanking:51 - ENTERED PASSWORD
+ 2023-08-22 14:42:35,539  INFO [TestNG-test=Test-1] ebanking:20 - ENTERED PASSWORD
+ 2023-08-22 14:42:37,267  INFO [TestNG-test=Test-2] ebanking:53 - CLICKED ON LOGIN BUTTON
+ 2023-08-22 14:43:34,961  INFO [TestNG-test=Test-2] ebanking:46 - URL IS OPENED
+ 2023-08-22 14:43:36,147  INFO [TestNG-test=Test-1] ebanking:15 - URL IS OPENED
+ 2023-08-22 14:43:36,314  INFO [TestNG-test=Test-2] ebanking:49 - ENTERED USERNAME
+ 2023-08-22 14:43:36,469  INFO [TestNG-test=Test-1] ebanking:18 - ENTERED USERNAME
+ 2023-08-22 14:43:36,525  INFO [TestNG-test=Test-2] ebanking:51 - ENTERED PASSWORD
+ 2023-08-22 14:43:36,545  INFO [TestNG-test=Test-1] ebanking:20 - ENTERED PASSWORD
+ 2023-08-22 14:43:37,962  INFO [TestNG-test=Test-2] ebanking:53 - CLICKED ON LOGIN BUTTON
+ 2023-08-22 14:44:53,771  INFO [TestNG-test=Test-1] ebanking:15 - URL IS OPENED
+ 2023-08-22 14:44:53,912  INFO [TestNG-test=Test-1] ebanking:18 - ENTERED USERNAME
+ 2023-08-22 14:44:53,973  INFO [TestNG-test=Test-1] ebanking:20 - ENTERED PASSWORD
+ 2023-08-22 14:44:56,041  INFO [TestNG-test=Test-1] ebanking:22 - CLICKED ON LOGIN BUTTON
+ 2023-08-22 14:44:56,073  INFO [TestNG-test=Test-1] ebanking:29 - TestCase is passed
+ 2023-08-22 14:46:04,515  INFO [TestNG-test=Test-1] ebanking:14 - URL IS OPENED
+ 2023-08-22 14:46:04,730  INFO [TestNG-test=Test-1] ebanking:17 - ENTERED USERNAME
+ 2023-08-22 14:46:04,772  INFO [TestNG-test=Test-1] ebanking:19 - ENTERED PASSWORD
+ 2023-08-22 14:46:06,381  INFO [TestNG-test=Test-1] ebanking:21 - CLICKED ON LOGIN BUTTON
+ 2023-08-22 14:46:06,411  INFO [TestNG-test=Test-1] ebanking:26 - TestCase is passed
+ 2023-08-22 14:46:15,955  INFO [TestNG-test=Test-2] ebanking:41 - URL IS OPENED
+ 2023-08-22 14:46:16,075  INFO [TestNG-test=Test-2] ebanking:42 - ENTERED USERNAME
+ 2023-08-22 14:46:16,144  INFO [TestNG-test=Test-2] ebanking:43 - ENTERED PASSWORD
+ 2023-08-22 14:46:17,703  INFO [TestNG-test=Test-2] ebanking:44 - CLICKED ON LOGIN BUTTON
+ 2023-08-22 14:46:17,739  INFO [TestNG-test=Test-2] ebanking:50 - TestCase is passed
+ 2023-08-22 14:47:45,609  INFO [TestNG-test=Test-1] ebanking:14 - URL IS OPENED
+ 2023-08-22 14:47:45,736  INFO [TestNG-test=Test-1] ebanking:17 - ENTERED USERNAME
+ 2023-08-22 14:47:45,787  INFO [TestNG-test=Test-1] ebanking:19 - ENTERED PASSWORD
+ 2023-08-22 14:47:47,833  INFO [TestNG-test=Test-1] ebanking:21 - CLICKED ON LOGIN BUTTON
+ 2023-08-22 14:47:47,846  INFO [TestNG-test=Test-1] ebanking:26 - TestCase is passed
+ 2023-08-22 14:47:58,515  INFO [TestNG-test=Test-2] ebanking:41 - URL IS OPENED
+ 2023-08-22 14:47:58,647  INFO [TestNG-test=Test-2] ebanking:42 - ENTERED USERNAME
+ 2023-08-22 14:47:58,692  INFO [TestNG-test=Test-2] ebanking:43 - ENTERED PASSWORD
+ 2023-08-22 14:48:00,092  INFO [TestNG-test=Test-2] ebanking:44 - CLICKED ON LOGIN BUTTON
+ 2023-08-22 14:48:00,098  INFO [TestNG-test=Test-2] ebanking:50 - TestCase is passed
+ 2023-08-22 14:48:39,973  INFO [TestNG-test=Test-1] ebanking:14 - URL IS OPENED
+ 2023-08-22 14:48:42,590  INFO [TestNG-test=Test-2] ebanking:41 - URL IS OPENED
+ 2023-08-22 14:48:42,786  INFO [TestNG-test=Test-1] ebanking:17 - ENTERED USERNAME
+ 2023-08-22 14:48:42,829  INFO [TestNG-test=Test-2] ebanking:42 - ENTERED USERNAME
+ 2023-08-22 14:48:42,947  INFO [TestNG-test=Test-1] ebanking:19 - ENTERED PASSWORD
+ 2023-08-22 14:48:42,995  INFO [TestNG-test=Test-2] ebanking:43 - ENTERED PASSWORD
+ 2023-08-22 14:48:44,458  INFO [TestNG-test=Test-1] ebanking:21 - CLICKED ON LOGIN BUTTON
+ 2023-08-22 15:16:52,878  INFO [TestNG-test=Parallel Tests-1] ebanking:14 - URL IS OPENED
+ 2023-08-22 15:16:55,784  INFO [TestNG-test=Parallel Tests-2] ebanking:41 - URL IS OPENED
+ 2023-08-22 15:16:56,197  INFO [TestNG-test=Parallel Tests-1] ebanking:17 - ENTERED USERNAME
+ 2023-08-22 15:16:56,246  INFO [TestNG-test=Parallel Tests-2] ebanking:44 - ENTERED USERNAME
+ 2023-08-22 15:16:56,286  INFO [TestNG-test=Parallel Tests-1] ebanking:19 - ENTERED PASSWORD
+ 2023-08-22 15:16:56,311  INFO [TestNG-test=Parallel Tests-2] ebanking:46 - ENTERED PASSWORD
+ 2023-08-22 15:16:57,672  INFO [TestNG-test=Parallel Tests-1] ebanking:21 - CLICKED ON LOGIN BUTTON
+ 2023-08-22 15:20:02,742  INFO [TestNG-test=Parallel Tests-2] ebanking:41 - URL IS OPENED
+ 2023-08-22 15:20:05,905  INFO [TestNG-test=Parallel Tests-1] ebanking:14 - URL IS OPENED
+ 2023-08-22 15:20:06,257  INFO [TestNG-test=Parallel Tests-2] ebanking:44 - ENTERED USERNAME
+ 2023-08-22 15:20:06,286  INFO [TestNG-test=Parallel Tests-1] ebanking:17 - ENTERED USERNAME
+ 2023-08-22 15:20:06,381  INFO [TestNG-test=Parallel Tests-2] ebanking:46 - ENTERED PASSWORD
+ 2023-08-22 15:20:06,397  INFO [TestNG-test=Parallel Tests-1] ebanking:19 - ENTERED PASSWORD
+ 2023-08-22 15:20:07,168  INFO [TestNG-test=Parallel Tests-2] ebanking:48 - CLICKED ON LOGIN BUTTON
+ 2023-08-22 15:22:55,680  INFO [TestNG-test=Test-1] ebanking:14 - URL IS OPENED
+ 2023-08-22 15:22:55,896  INFO [TestNG-test=Test-2] ebanking:41 - URL IS OPENED
+ 2023-08-22 15:22:56,498  INFO [TestNG-test=Test-1] ebanking:17 - ENTERED USERNAME
+ 2023-08-22 15:22:56,542  INFO [TestNG-test=Test-2] ebanking:44 - ENTERED USERNAME
+ 2023-08-22 15:22:56,596  INFO [TestNG-test=Test-1] ebanking:19 - ENTERED PASSWORD
+ 2023-08-22 15:22:56,662  INFO [TestNG-test=Test-2] ebanking:46 - ENTERED PASSWORD
+ 2023-08-22 15:22:58,148  INFO [TestNG-test=Test-1] ebanking:21 - CLICKED ON LOGIN BUTTON
+ 2023-08-22 15:35:33,313  INFO [TestNG-test=Test-1] ebanking:13 - URL IS OPENED
+ 2023-08-22 15:36:26,906  INFO [TestNG-test=Test-1] ebanking:13 - URL IS OPENED
+ 2023-08-22 15:36:27,193  INFO [TestNG-test=Test-1] ebanking:14 - ENTERED USERNAME
+ 2023-08-22 15:36:27,252  INFO [TestNG-test=Test-1] ebanking:15 - ENTERED PASSWORD
+ 2023-08-22 15:36:28,877  INFO [TestNG-test=Test-1] ebanking:16 - CLICKED ON LOGIN BUTTON
+ 2023-08-22 15:36:28,892  INFO [TestNG-test=Test-1] ebanking:20 - TestCase is passed
+ 2023-08-22 15:37:47,078  INFO [TestNG-test=Test-2] ebanking:40 - URL IS OPENED
+ 2023-08-22 15:37:51,098  INFO [TestNG-test=Test-1] ebanking:14 - URL IS OPENED
+ 2023-08-22 15:37:51,316  INFO [TestNG-test=Test-2] ebanking:43 - ENTERED USERNAME
+ 2023-08-22 15:37:51,363  INFO [TestNG-test=Test-1] ebanking:17 - ENTERED USERNAME
+ 2023-08-22 15:37:51,485  INFO [TestNG-test=Test-2] ebanking:45 - ENTERED PASSWORD
+ 2023-08-22 15:37:51,506  INFO [TestNG-test=Test-1] ebanking:19 - ENTERED PASSWORD
+ 2023-08-22 15:37:52,882  INFO [TestNG-test=Test-2] ebanking:47 - CLICKED ON LOGIN BUTTON
+ 2023-08-22 15:41:45,596  INFO [TestNG-test=Test-2] ebanking:40 - URL IS OPENED
+ 2023-08-22 15:41:48,297  INFO [TestNG-test=Test-1] ebanking:14 - URL IS OPENED
+ 2023-08-22 15:41:48,892  INFO [TestNG-test=Test-2] ebanking:43 - ENTERED USERNAME
+ 2023-08-22 15:41:48,977  INFO [TestNG-test=Test-1] ebanking:17 - ENTERED USERNAME
+ 2023-08-22 15:41:49,213  INFO [TestNG-test=Test-2] ebanking:45 - ENTERED PASSWORD
+ 2023-08-22 15:41:49,284  INFO [TestNG-test=Test-1] ebanking:19 - ENTERED PASSWORD
+ 2023-08-22 15:41:50,390  INFO [TestNG-test=Test-2] ebanking:47 - CLICKED ON LOGIN BUTTON
+ 2023-08-22 15:42:58,453  INFO [main] ebanking:14 - URL IS OPENED
+ 2023-08-22 15:42:58,997  INFO [main] ebanking:17 - ENTERED USERNAME
+ 2023-08-22 15:42:59,201  INFO [main] ebanking:19 - ENTERED PASSWORD
+ 2023-08-22 15:43:01,912  INFO [main] ebanking:21 - CLICKED ON LOGIN BUTTON
+ 2023-08-22 15:43:01,922  INFO [main] ebanking:26 - TestCase is passed
+ 2023-08-23 22:29:11,866  INFO [main] ebanking:47 - LOGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG[Brocolli - 1 Kg, Cauliflower - 1 Kg, Cucumber - 1 Kg, Beetroot - 1 Kg, Beans - 1 Kg, Pumpkin - 1 Kg, Banana - 1 Kg, Pears - 1 Kg, Water Melon - 1 Kg]
+ 2023-08-23 22:36:16,499  INFO [main] ebanking:49 - LOGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG[Walnuts - 1/4 Kg]
+ 2023-08-23 22:39:48,119  INFO [main] ebanking:49 - LOGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG[Walnuts - 1/4 Kg]
+ 2023-08-23 22:39:48,123  INFO [main] ebanking:50 - com.inetBanking_V122.PageObjects.SearchPage@298d9a05
+ 2023-08-23 22:52:06,513  INFO [main] ebanking:49 - LOGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGWalnuts 
+ 2023-08-23 22:52:06,519  INFO [main] ebanking:50 - com.inetBanking_V122.PageObjects.SearchPage@298d9a05
+ 2023-08-23 22:58:06,132  INFO [main] ebanking:49 - LOGGINFORMATONWalnuts
+ 2023-08-23 22:59:02,358  INFO [main] ebanking:48 - LOGGINFORMATONWalnuts
+ 2023-08-23 23:25:21,005  INFO [main] ebanking:56 - LOGGINFORMATONWalnuts
+ 2023-08-23 23:33:51,406  INFO [main] ebanking:54 - LOGGINFORMATONBrocolli
+ 2023-08-23 23:50:53,150  INFO [main] ebanking:52 - LOGGINFORMATONBrocolli
+ 2023-08-23 23:52:22,996  INFO [main] ebanking:52 - LOGGINFORMATONBrocolli
+ 2023-08-24 00:08:33,267  INFO [main] ebanking:52 - LOGGINFORMATONBrocolli
+ 2023-08-24 00:11:04,997  INFO [main] ebanking:53 - LOGGINFORMATONBrocolli
+ 2023-08-24 00:12:05,771  INFO [main] ebanking:53 - LOGGINFORMATONWalnuts
+ 2023-08-24 00:12:57,627  INFO [main] ebanking:52 - LOGGINFORMATONWalnuts
+ 2023-08-24 00:14:12,189  INFO [main] ebanking:52 - LOGGINFORMATONWalnuts
+ 2023-08-24 00:15:12,712  INFO [main] ebanking:52 - LOGGINFORMATONWalnuts
  

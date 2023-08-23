@@ -31,6 +31,7 @@ public class LoginPage {
 	
 	public void setUserName(String uname) {
 		txtUserName.sendKeys(uname);
+	
 
 	}
 

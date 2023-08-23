@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-18T06:14:26Z" name="Suite" finished-at="2023-08-18T06:14:39Z" duration-ms="13371">
+  <suite started-at="2023-08-23T18:45:01Z" name="Parallel Test Suite" finished-at="2023-08-23T18:45:16Z" duration-ms="14624">
     <groups>
     </groups>
-    <test started-at="2023-08-18T06:14:26Z" name="Test" finished-at="2023-08-18T06:14:39Z" duration-ms="13371">
-      <class name="com.inetBanking_V122.TestCases.LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.inetBanking_V122.TestCases.LoginTest@d771cc9]" started-at="2023-08-18T06:14:26Z" name="setUp" finished-at="2023-08-18T06:14:31Z" duration-ms="5156" status="PASS">
+    <test started-at="2023-08-23T18:45:01Z" name="Test" finished-at="2023-08-23T18:45:16Z" duration-ms="14624">
+      <class name="com.inetBanking_V122.TestCases.SearchFunctionaility">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@1583741e]" started-at="2023-08-23T18:45:02Z" name="setUp" finished-at="2023-08-23T18:45:10Z" duration-ms="8172" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,35 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:com.inetBanking_V122.TestCases.LoginTest@d771cc9]" started-at="2023-08-18T06:14:31Z" name="loginTest" finished-at="2023-08-18T06:14:38Z" duration-ms="6574" status="PASS">
+        <test-method signature="Validatethatsearchboxisdisplayedinthehomepage()[pri:1, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@1583741e]" started-at="2023-08-23T18:45:10Z" name="Validatethatsearchboxisdisplayedinthehomepage" finished-at="2023-08-23T18:45:11Z" duration-ms="632" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetBanking_V122.TestCases.LoginTest@d771cc9]" started-at="2023-08-18T06:14:38Z" name="tearDown" finished-at="2023-08-18T06:14:39Z" duration-ms="1342" status="PASS">
+        </test-method> <!-- Validatethatsearchboxisdisplayedinthehomepage -->
+        <test-method signature="ValidatethatsearchButttonisdisplayedinthehomepage()[pri:2, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@1583741e]" started-at="2023-08-23T18:45:11Z" name="ValidatethatsearchButttonisdisplayedinthehomepage" finished-at="2023-08-23T18:45:11Z" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidatethatsearchButttonisdisplayedinthehomepage -->
+        <test-method signature="ValidatethatSearchforVegetablesAndFruitsPlaceholderisdispalyedinsearchboxfield()[pri:3, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@1583741e]" started-at="2023-08-23T18:45:11Z" name="ValidatethatSearchforVegetablesAndFruitsPlaceholderisdispalyedinsearchboxfield" finished-at="2023-08-23T18:45:11Z" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidatethatSearchforVegetablesAndFruitsPlaceholderisdispalyedinsearchboxfield -->
+        <test-method signature="Validatethatmultipleproductsaredisplayedinthehomepage()[pri:4, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@1583741e]" started-at="2023-08-23T18:45:11Z" name="Validatethatmultipleproductsaredisplayedinthehomepage" finished-at="2023-08-23T18:45:11Z" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validatethatmultipleproductsaredisplayedinthehomepage -->
+        <test-method signature="Validatethatproductsaresortedaspertheuserinputs()[pri:5, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@1583741e]" started-at="2023-08-23T18:45:11Z" name="Validatethatproductsaresortedaspertheuserinputs" finished-at="2023-08-23T18:45:12Z" duration-ms="1416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validatethatproductsaresortedaspertheuserinputs -->
+        <test-method signature="Validatethatproductsaresortedaspertheuserinputsthepartialproductname()[pri:6, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@1583741e]" started-at="2023-08-23T18:45:12Z" name="Validatethatproductsaresortedaspertheuserinputsthepartialproductname" finished-at="2023-08-23T18:45:14Z" duration-ms="1350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validatethatproductsaresortedaspertheuserinputsthepartialproductname -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@1583741e]" started-at="2023-08-23T18:45:14Z" name="tearDown" finished-at="2023-08-23T18:45:16Z" duration-ms="2245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.inetBanking_V122.TestCases.LoginTest -->
+      </class> <!-- com.inetBanking_V122.TestCases.SearchFunctionaility -->
     </test> <!-- Test -->
-  </suite> <!-- Suite -->
+  </suite> <!-- Parallel Test Suite -->
 </testng-results>

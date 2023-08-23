@@ -3,5 +3,6 @@ com\inetBanking_V122\Utilities\XLUtilis.class
 com\inetBanking_V122\TestCases\BaseClass.class
 com\inetBanking_V122\Utilities\ReadConfig.class
 com\inetBanking_V122\Utilities\Reporting.class
+com\inetBanking_V122\TestCases\ParllelTests.class
 com\inetBanking_V122\PageObjects\LoginPage.class
 com\inetBanking_V122\TestCases\TC_lOGIN_DDT.class

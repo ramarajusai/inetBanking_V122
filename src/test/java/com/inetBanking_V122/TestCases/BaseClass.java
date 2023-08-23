@@ -5,7 +5,11 @@ import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 import com.inetBanking_V122.Utilities.ReadConfig;
@@ -26,8 +30,11 @@ public class BaseClass {
 	public void setUp(String br) {
 		
 		if(br.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"//Drivers//geckodriver.exe");
-			driver =new FirefoxDriver();
+			
+			  System.setProperty("webdriver.gecko.driver",
+			  System.getProperty("user.dir")+"//Drivers//geckodriver.exe"); driver =new
+			  FirefoxDriver();
+			 
 			
 		}
 		
@@ -41,7 +48,7 @@ public class BaseClass {
 			System.out.println("EXECUTE chrome BROWSER");
 		}
 		
-
+driver.get(baseURL);
 		driver.manage().window().maximize();
 		
 		 logger =Logger.getLogger("ebanking");
