@@ -65,4 +65,45 @@ public class SearchFunctionaility extends BaseClass {
 
 	}
 
+	@Test(priority = 7)
+	public void Validatethatallinitialproductsaredisplayedwhensearchboxisresettedaftersorting()
+			throws InterruptedException {
+		sp = new SearchPage(driver);
+		sp.clearTextInSearchTextBox();
+		s = new Sleep(driver);
+		s.waitForSomeSecondsHardSleep(1000);
+		Assert.assertEquals(sp.getNumberOfDefaultProduct(), 30);
+
+	}
+
+	@Test(priority = 8)
+	public void ValidatethatSorrynoproductsmatchedyoursearchmessageisdisplayedwhenuserentersproductnamewhichisnotavailable()
+			throws InterruptedException {
+		s = new Sleep(driver);
+		sp = new SearchPage(driver);
+		sp.enterDataIntoSearchTextBox("  ");
+		s.waitForSomeSecondsHardSleep(1000);
+		Assert.assertEquals(sp.getTheTextOfNoProductsMessage(), "Sorry, no products matched your search!");
+
+	}
+
+	@Test(priority = 9)
+	public void Validatethatwhenuniqueproductareaddedtothecartitemfieldisupdated() throws InterruptedException {
+		sp = new SearchPage(driver);
+		s = new Sleep(driver);
+		s.waitForSomeSecondsHardSleep(2000);
+		sp.clearTextInSearchTextBox();
+		Assert.assertEquals(sp.adduniqueProductsToThecart("Brocolli", "Cauliflower", "Cashews"), "3");
+
+	}
+
+	@Test(priority = 10)
+	public void Validatethatwhenduplicateproductareaddedtothecartitemfieldisnotupdated() throws InterruptedException {
+		sp = new SearchPage(driver);
+		s = new Sleep(driver);
+		s.waitForSomeSecondsHardSleep(2000);
+		Assert.assertEquals(sp.adduniqueProductsToThecart("Brocolli", "Cauliflower", "Cashews"), "3");
+
+	}
+
 }

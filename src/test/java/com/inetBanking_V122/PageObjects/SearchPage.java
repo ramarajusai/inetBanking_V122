@@ -10,9 +10,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.inetBanking_V122.Listeners.Sleep;
+
 public class SearchPage {
 
 	WebDriver ldriver;
+	Sleep s1;
 
 	public SearchPage(WebDriver rdriver) {
 
@@ -33,6 +36,15 @@ public class SearchPage {
 	@FindBy(xpath = "//div/div/h4")
 	List<WebElement> listOfSortedProductNames;
 
+	@FindBy(xpath = "//div[@class=\"no-results\"]//img//following-sibling::h2")
+	WebElement noProductsMessage;
+
+	@FindBy(xpath = "//button[text()='ADD TO CART']")
+	List<WebElement> addToCartButtons;
+
+	@FindBy(xpath = "(//tr/td/strong)[1]")
+	WebElement itemFiedNumber;
+
 	public void listOfProductNamesLocator() {
 
 		ldriver.findElement(By.xpath("//div/div/h4"));
@@ -47,6 +59,7 @@ public class SearchPage {
 
 			String[] s = productNameWithCompleteText.split(" -");
 			String productName = s[0];
+			System.out.println(productName);
 			al.add(productName);
 		}
 		return al;
@@ -89,6 +102,7 @@ public class SearchPage {
 	public void enterDataIntoSearchTextBox(String text) {
 
 		searchBox.sendKeys(text);
+
 	}
 
 	public void clearTextInSearchTextBox() {
@@ -119,4 +133,41 @@ public class SearchPage {
 			}
 		}
 	}
+
+	public String getTheTextOfNoProductsMessage() {
+
+		return noProductsMessage.getText();
+	}
+
+	public String adduniqueProductsToThecart(String p1, String p2, String p3) throws InterruptedException {
+		
+		s1=new Sleep(ldriver);
+		
+		for (int i = 0; i < listOfProductNames.size(); i++) {
+
+
+
+			String productNameWithCompleteText = listOfProductNames.get(i).getText();
+
+			String[] s = productNameWithCompleteText.split(" -");
+			String productName = s[0].trim();
+
+			s1.waitForSomeSecondsHardSleep(1000);
+			// System.out.println("P1="+p1);
+
+			if (p1.contains(productName) || p2.contains(productName) || p3.contains(productName)) {
+
+
+				addToCartButtons.get(i).click();
+				
+			s1.waitForSomeSecondsHardSleep(3000);
+
+			}
+
+		}
+
+		return itemFiedNumber.getText();
+
+	}
+
 }
