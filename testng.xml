@@ -3,9 +3,7 @@
 
 	<suite name="Parallel Test Suite">
 	<listeners>
-		
-		<listener class-name="com.inetBanking_V122.Utilities.Reporting"></listener>
-		
+		<listener class-name="com.inetBanking_V122.Utilities.Reporting"></listener>		
 	</listeners>
  <test name = "Test">
 	 
