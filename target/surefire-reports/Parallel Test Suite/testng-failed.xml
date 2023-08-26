@@ -9,7 +9,7 @@
     <classes>
       <class name="com.inetBanking_V122.TestCases.SearchFunctionaility">
         <methods>
-          <include name="Validatethatwhenuniqueproductareaddedtothecartitemfieldisupdated"/>
+          <include name="Validatethatwhenproductareaddedtothecartpricefieldisupdated"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

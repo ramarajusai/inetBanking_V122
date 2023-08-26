@@ -29,6 +29,9 @@ public class Sleep {
 
 	}
 	
-
+	public void refreshPage() {
+		
+		ldriver.navigate().refresh();
+	}
 
 }

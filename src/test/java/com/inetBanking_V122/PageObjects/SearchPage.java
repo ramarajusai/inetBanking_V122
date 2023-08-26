@@ -39,11 +39,19 @@ public class SearchPage {
 	@FindBy(xpath = "//div[@class=\"no-results\"]//img//following-sibling::h2")
 	WebElement noProductsMessage;
 
-	@FindBy(xpath = "//button[text()='ADD TO CART']")
+	@FindBy(xpath = "//div[@class=\"product-action\"]/button")
 	List<WebElement> addToCartButtons;
 
 	@FindBy(xpath = "(//tr/td/strong)[1]")
 	WebElement itemFiedNumber;
+		
+	@FindBy(xpath = "(//tr/td/strong)[2]")
+	WebElement priceFieldNumber;
+	
+	
+	@FindBy(xpath="//div[@class=\"product\"]/p")
+	List<WebElement> pricesOfProducts ;
+	
 
 	public void listOfProductNamesLocator() {
 
@@ -140,12 +148,10 @@ public class SearchPage {
 	}
 
 	public String adduniqueProductsToThecart(String p1, String p2, String p3) throws InterruptedException {
-		
-		s1=new Sleep(ldriver);
-		
+
+		s1 = new Sleep(ldriver);
+
 		for (int i = 0; i < listOfProductNames.size(); i++) {
-
-
 
 			String productNameWithCompleteText = listOfProductNames.get(i).getText();
 
@@ -157,10 +163,9 @@ public class SearchPage {
 
 			if (p1.contains(productName) || p2.contains(productName) || p3.contains(productName)) {
 
-
 				addToCartButtons.get(i).click();
-				
-			s1.waitForSomeSecondsHardSleep(3000);
+
+				s1.waitForSomeSecondsHardSleep(3000);
 
 			}
 
@@ -170,4 +175,84 @@ public class SearchPage {
 
 	}
 
+	public String addSingleProductToThecart(String p1) throws InterruptedException {
+
+		s1 = new Sleep(ldriver);
+		String text = null;
+		for (int i = 0; i < listOfProductNames.size(); i++) {
+			String productNameWithCompleteText = listOfProductNames.get(i).getText();
+			String[] s = productNameWithCompleteText.split(" -");
+			String productName = s[0].trim();
+			s1.waitForSomeSecondsHardSleep(1000);
+			// System.out.println("P1="+p1);
+			if (p1.contains(productName)) {
+				addToCartButtons.get(i).click();
+				text = addToCartButtons.get(i).getText();
+				s1.waitForSomeSecondsHardSleep(3000);
+			}
+		}
+		return text;
+
+	}
+	
+	public String getTextfteraddingCartToProduct(String p2) throws InterruptedException {
+		s1 = new Sleep(ldriver);
+		String text = null;
+		for (int i = 0; i < listOfProductNames.size(); i++) {
+			String productNameWithCompleteText = listOfProductNames.get(i).getText();
+			String[] s = productNameWithCompleteText.split(" -");
+			String productName = s[0].trim();
+			s1.waitForSomeSecondsHardSleep(1000);
+			// System.out.println("P1="+p1);
+			if (p2.contains(productName)) {
+				addToCartButtons.get(i).click();			
+				s1.waitForSomeSecondsHardSleep(4000);
+				text = addToCartButtons.get(i).getText();
+				System.out.println("TEXT="+ text);
+			}
+		}
+		
+		return text;
+	}
+	
+	
+
+
+	
+	public int adduniqueProductsToThecartAndGetPrice(String p1, String p2, String p3) throws InterruptedException {
+
+		s1 = new Sleep(ldriver);
+		int price=0;
+
+		for (int i = 0; i < listOfProductNames.size(); i++) {
+
+			String productNameWithCompleteText = listOfProductNames.get(i).getText();
+
+			String[] s = productNameWithCompleteText.split(" -");
+			String productName = s[0].trim();
+
+			s1.waitForSomeSecondsHardSleep(1000);
+			// System.out.println("P1="+p1);
+
+			if (p1.contains(productName) || p2.contains(productName) || p3.contains(productName)) {
+
+			
+				addToCartButtons.get(i).click();
+
+				s1.waitForSomeSecondsHardSleep(3000);
+				
+				String sp=pricesOfProducts.get(i).getText();
+				price= price+Integer.parseInt(sp);
+				
+		
+				
+			}
+
+		}
+
+		return price;
+
+	}
+	
+	
 }

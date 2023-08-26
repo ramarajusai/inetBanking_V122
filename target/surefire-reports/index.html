@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Parallel_Test_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Parallel Test Suite</span>
+              <span class="suite-name border-failed">Parallel Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Parallel_Test_Suite" class="hide-methods passed suite-Parallel_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Parallel_Test_Suite -->
-                      <a href="#" panel-name="suite-Parallel_Test_Suite" class="show-methods passed suite-Parallel_Test_Suite"> (show)</a> <!-- show-methods passed suite-Parallel_Test_Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Parallel_Test_Suite" class="hide-methods failed suite-Parallel_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Parallel_Test_Suite -->
+                      <a href="#" panel-name="suite-Parallel_Test_Suite" class="show-methods failed suite-Parallel_Test_Suite"> (show)</a> <!-- show-methods failed suite-Parallel_Test_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Parallel_Test_Suite">
+                    <div class="method-list-content failed suite-Parallel_Test_Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Parallel_Test_Suite" title="com.inetBanking_V122.TestCases.SearchFunctionaility" class="method navigator-link" hash-for-method="Validatethatwhenuniqueproductareaddedtothecartitemfieldisupdated">Validatethatwhenuniqueproductareaddedtothecartitemfieldisupdated</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Parallel_Test_Suite" title="com.inetBanking_V122.TestCases.SearchFunctionaility" class="method navigator-link" hash-for-method="Validatethatwhenproductareaddedtothecartpricefieldisupdated">Validatethatwhenproductareaddedtothecartpricefieldisupdated</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Parallel_Test_Suite -->
+                    </div> <!-- method-list-content failed suite-Parallel_Test_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,21 +117,30 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Parallel_Test_Suite" class="panel Parallel_Test_Suite">
-          <div class="suite-Parallel_Test_Suite-class-passed">
+          <div class="suite-Parallel_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.inetBanking_V122.TestCases.SearchFunctionaility</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Validatethatwhenuniqueproductareaddedtothecartitemfieldisupdated">
-                  </a> <!-- Validatethatwhenuniqueproductareaddedtothecartitemfieldisupdated -->
-                  <span class="method-name">Validatethatwhenuniqueproductareaddedtothecartitemfieldisupdated</span>
+                  <a name="Validatethatwhenproductareaddedtothecartpricefieldisupdated">
+                  </a> <!-- Validatethatwhenproductareaddedtothecartpricefieldisupdated -->
+                  <span class="method-name">Validatethatwhenproductareaddedtothecartpricefieldisupdated</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected:&lt;830&gt; but was:&lt;123&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at com.inetBanking_V122.TestCases.SearchFunctionaility.Validatethatwhenproductareaddedtothecartpricefieldisupdated(SearchFunctionaility.java:127)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Parallel_Test_Suite-class-passed -->
+          </div> <!-- suite-Parallel_Test_Suite-class-failed -->
         </div> <!-- panel Parallel_Test_Suite -->
         <div panel-name="test-xml-Parallel_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -190,14 +199,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Validatethatwhenuniqueproductareaddedtothecartitemfieldisupdated')
+data.setCell(0, 1, 'Validatethatwhenproductareaddedtothecartpricefieldisupdated')
 data.setCell(0, 2, 'com.inetBanking_V122.TestCases.SearchFunctionaility')
-data.setCell(0, 3, 2656);
+data.setCell(0, 3, 45064);
 window.suiteTableData['Parallel_Test_Suite']= { tableData: data, tableDiv: 'times-div-Parallel_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
               <div id="times-div-Parallel_Test_Suite">
               </div> <!-- times-div-Parallel_Test_Suite -->
             </div> <!-- times-div -->
@@ -229,12 +238,14 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">Validatethatwhenuniqueproductareaddedtothecartitemfieldisupdated</span>
-                <span class="method-start">7906 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Validatethatwhenproductareaddedtothecartpricefieldisupdated</span>
+                <span class="method-start">5173 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">10579 ms</span>
+                <span class="method-start">50258 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
