@@ -1,15 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 56.344 s <<< FAILURE! - in TestSuite
-com.inetBanking_V122.TestCases.SearchFunctionaility.Validatethatwhenproductareaddedtothecartpricefieldisupdated  Time elapsed: 45.07 s  <<< FAILURE!
-java.lang.AssertionError: expected:<830> but was:<123>
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:743)
-	at org.junit.Assert.assertEquals(Assert.java:118)
-	at org.junit.Assert.assertEquals(Assert.java:555)
-	at org.junit.Assert.assertEquals(Assert.java:542)
-	at com.inetBanking_V122.TestCases.SearchFunctionaility.Validatethatwhenproductareaddedtothecartpricefieldisupdated(SearchFunctionaility.java:127)
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 55.56 s <<< FAILURE! - in TestSuite
+com.inetBanking_V122.TestCases.Cart.Validatethatwhenproductareaddedtothecartsameproductdetailsaredisplayedinthecart  Time elapsed: 45.176 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.inetBanking_V122.TestCases.Cart.Validatethatwhenproductareaddedtothecartsameproductdetailsaredisplayedinthecart(Cart.java:23)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

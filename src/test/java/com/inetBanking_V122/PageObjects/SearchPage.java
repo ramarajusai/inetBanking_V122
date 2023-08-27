@@ -24,6 +24,18 @@ public class SearchPage {
 
 	}
 
+	static int priceOfFirstProductinInt;
+	static String priceOfFirstProductinString;
+	static String nameOfFirstProduct;
+	static String priceOfSecondProduct;
+	static String nameOfSecondProduct;
+	static String priceOfThirdProduct;
+	static String nameOfThirdProduct;
+	static String productPriceWithoutDuplicates;
+	static String firstProductQuantity;
+	static String secondProductQuantity;
+	static String thirdProductQuantity;
+
 	@FindBy(className = "search-keyword")
 	WebElement searchBox;
 
@@ -44,14 +56,21 @@ public class SearchPage {
 
 	@FindBy(xpath = "(//tr/td/strong)[1]")
 	WebElement itemFiedNumber;
-		
+
 	@FindBy(xpath = "(//tr/td/strong)[2]")
 	WebElement priceFieldNumber;
-	
-	
-	@FindBy(xpath="//div[@class=\"product\"]/p")
-	List<WebElement> pricesOfProducts ;
-	
+
+	@FindBy(xpath = "//div[@class=\"product\"]/p")
+	List<WebElement> pricesOfProducts;
+
+	@FindBy(xpath = "//a[@class=\"decrement\"]")
+	List<WebElement> decrement;
+
+	@FindBy(xpath = "//a[@class=\"increment\"]")
+	List<WebElement> increment;
+
+	@FindBy(xpath = "//img[@alt=\"Cart\"]")
+	WebElement cartButton;
 
 	public void listOfProductNamesLocator() {
 
@@ -194,7 +213,7 @@ public class SearchPage {
 		return text;
 
 	}
-	
+
 	public String getTextfteraddingCartToProduct(String p2) throws InterruptedException {
 		s1 = new Sleep(ldriver);
 		String text = null;
@@ -205,24 +224,20 @@ public class SearchPage {
 			s1.waitForSomeSecondsHardSleep(1000);
 			// System.out.println("P1="+p1);
 			if (p2.contains(productName)) {
-				addToCartButtons.get(i).click();			
+				addToCartButtons.get(i).click();
 				s1.waitForSomeSecondsHardSleep(4000);
 				text = addToCartButtons.get(i).getText();
-				System.out.println("TEXT="+ text);
+				System.out.println("TEXT=" + text);
 			}
 		}
-		
+
 		return text;
 	}
-	
-	
 
-
-	
 	public int adduniqueProductsToThecartAndGetPrice(String p1, String p2, String p3) throws InterruptedException {
 
 		s1 = new Sleep(ldriver);
-		int price=0;
+		int price = 0;
 
 		for (int i = 0; i < listOfProductNames.size(); i++) {
 
@@ -236,16 +251,13 @@ public class SearchPage {
 
 			if (p1.contains(productName) || p2.contains(productName) || p3.contains(productName)) {
 
-			
 				addToCartButtons.get(i).click();
 
 				s1.waitForSomeSecondsHardSleep(3000);
-				
-				String sp=pricesOfProducts.get(i).getText();
-				price= price+Integer.parseInt(sp);
-				
-		
-				
+
+				String sp = pricesOfProducts.get(i).getText();
+				price = price + Integer.parseInt(sp);
+
 			}
 
 		}
@@ -253,6 +265,88 @@ public class SearchPage {
 		return price;
 
 	}
-	
-	
+
+	public void incrementTheQuantity(int index, int quant) {
+
+		for (int i = 0; i < quant; i++) {
+
+			increment.get(index).click();
+		}
+
+	}
+
+	public void addMultipleProductsIncludingDuplicates(String p1, String p2, String p3, int quantity)
+			throws InterruptedException {
+
+		s1 = new Sleep(ldriver);
+
+		for (int i = 0; i < listOfProductNames.size(); i++) {
+
+			String productNameWithCompleteText = listOfProductNames.get(i).getText();
+
+			String[] s = productNameWithCompleteText.split(" -");
+			String productName = s[0].trim();
+
+			s1.waitForSomeSecondsHardSleep(1000);
+			// System.out.println("P1="+p1);
+			//
+			if (p1.contains(productName)) {
+
+				firstProductQuantity = "2";
+				nameOfFirstProduct = productName;
+				incrementTheQuantity(i, quantity);
+
+				addToCartButtons.get(i).click();
+				s1.waitForSomeSecondsHardSleep(3000);
+
+				String sp = pricesOfProducts.get(i).getText();
+				productPriceWithoutDuplicates = sp;
+				priceOfFirstProductinInt = priceOfFirstProductinInt + Integer.parseInt(sp);
+				if (quantity == 1) {
+
+					priceOfFirstProductinInt = priceOfFirstProductinInt * 2;
+					System.out.println(priceOfFirstProductinInt);
+
+					priceOfFirstProductinString = Integer.toString(priceOfFirstProductinInt);
+
+					System.out.println("Hello");
+
+				}
+
+			}
+
+			else if (p2.contains(productName)) {
+				secondProductQuantity = "1";
+				nameOfSecondProduct = productName;
+				addToCartButtons.get(i).click();
+				s1.waitForSomeSecondsHardSleep(3000);
+
+				priceOfSecondProduct = pricesOfProducts.get(i).getText();
+
+			}
+
+			else if (p3.contains(productName)) {
+				thirdProductQuantity = "1";
+				nameOfThirdProduct = productName;
+				addToCartButtons.get(i).click();
+				s1.waitForSomeSecondsHardSleep(3000);
+				priceOfThirdProduct = pricesOfProducts.get(i).getText();
+
+			}
+
+		}
+
+		System.out.println("priceOfFirstProductinString=" + priceOfFirstProductinString);
+		System.out.println("nameOfFirstProduct=" + nameOfFirstProduct);
+		System.out.println("priceOfSecondProduct=" + priceOfSecondProduct);
+		System.out.println("nameOfSecondProduct=" + nameOfSecondProduct);
+		System.out.println("priceOfThirdProduct=" + priceOfThirdProduct);
+		System.out.println("nameOfThirdProduct=" + nameOfThirdProduct);
+		System.out.println("productPriceWithoutDuplicates=" + productPriceWithoutDuplicates);
+		System.out.println("firstProductQuantity=" + firstProductQuantity);
+		System.out.println("secondProductQuantity=" + secondProductQuantity);
+		System.out.println("thirdProductQuantity=" + thirdProductQuantity);
+
+	}
+
 }

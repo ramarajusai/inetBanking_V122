@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-26T19:27:32Z" name="Parallel Test Suite" finished-at="2023-08-26T19:28:24Z" duration-ms="52421">
+  <suite started-at="2023-08-27T20:25:53Z" name="Parallel Test Suite" finished-at="2023-08-27T20:30:29Z" duration-ms="275325">
     <groups>
     </groups>
-    <test started-at="2023-08-26T19:27:32Z" name="Test" finished-at="2023-08-26T19:28:24Z" duration-ms="52421">
-      <class name="com.inetBanking_V122.TestCases.SearchFunctionaility">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@d771cc9]" started-at="2023-08-26T19:27:32Z" name="setUp" finished-at="2023-08-26T19:27:38Z" duration-ms="6242" status="PASS">
+    <test started-at="2023-08-27T20:25:53Z" name="Test" finished-at="2023-08-27T20:30:29Z" duration-ms="275325">
+      <class name="com.inetBanking_V122.TestCases.Cart">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.inetBanking_V122.TestCases.Cart@1f53a5dc]" started-at="2023-08-27T20:29:31Z" name="setUp" finished-at="2023-08-27T20:29:37Z" duration-ms="6154" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,80 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Validatethatwhenproductareaddedtothecartpricefieldisupdated()[pri:13, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@d771cc9]" started-at="2023-08-26T19:27:38Z" name="Validatethatwhenproductareaddedtothecartpricefieldisupdated" finished-at="2023-08-26T19:28:23Z" duration-ms="44660" status="PASS">
+        <test-method signature="Validatethatwhenproductareaddedtothecartsameproductdetailsaredisplayedinthecart()[pri:14, instance:com.inetBanking_V122.TestCases.Cart@1f53a5dc]" started-at="2023-08-27T20:29:37Z" name="Validatethatwhenproductareaddedtothecartsameproductdetailsaredisplayedinthecart" finished-at="2023-08-27T20:30:24Z" duration-ms="47118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validatethatwhenproductareaddedtothecartsameproductdetailsaredisplayedinthecart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetBanking_V122.TestCases.Cart@1f53a5dc]" started-at="2023-08-27T20:30:24Z" name="tearDown" finished-at="2023-08-27T20:30:29Z" duration-ms="4381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.inetBanking_V122.TestCases.Cart -->
+      <class name="com.inetBanking_V122.TestCases.SearchFunctionaility">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@413f69cc]" started-at="2023-08-27T20:25:53Z" name="setUp" finished-at="2023-08-27T20:26:01Z" duration-ms="7072" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Validatethatsearchboxisdisplayedinthehomepage()[pri:1, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@413f69cc]" started-at="2023-08-27T20:26:01Z" name="Validatethatsearchboxisdisplayedinthehomepage" finished-at="2023-08-27T20:26:01Z" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validatethatsearchboxisdisplayedinthehomepage -->
+        <test-method signature="ValidatethatsearchButttonisdisplayedinthehomepage()[pri:2, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@413f69cc]" started-at="2023-08-27T20:26:01Z" name="ValidatethatsearchButttonisdisplayedinthehomepage" finished-at="2023-08-27T20:26:01Z" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidatethatsearchButttonisdisplayedinthehomepage -->
+        <test-method signature="ValidatethatSearchforVegetablesAndFruitsPlaceholderisdispalyedinsearchboxfield()[pri:3, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@413f69cc]" started-at="2023-08-27T20:26:01Z" name="ValidatethatSearchforVegetablesAndFruitsPlaceholderisdispalyedinsearchboxfield" finished-at="2023-08-27T20:26:01Z" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidatethatSearchforVegetablesAndFruitsPlaceholderisdispalyedinsearchboxfield -->
+        <test-method signature="Validatethatmultipleproductsaredisplayedinthehomepage()[pri:4, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@413f69cc]" started-at="2023-08-27T20:26:01Z" name="Validatethatmultipleproductsaredisplayedinthehomepage" finished-at="2023-08-27T20:26:01Z" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validatethatmultipleproductsaredisplayedinthehomepage -->
+        <test-method signature="Validatethatproductsaresortedaspertheuserinputs()[pri:5, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@413f69cc]" started-at="2023-08-27T20:26:01Z" name="Validatethatproductsaresortedaspertheuserinputs" finished-at="2023-08-27T20:26:02Z" duration-ms="1311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validatethatproductsaresortedaspertheuserinputs -->
+        <test-method signature="Validatethatproductsaresortedaspertheuserinputsthepartialproductname()[pri:6, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@413f69cc]" started-at="2023-08-27T20:26:02Z" name="Validatethatproductsaresortedaspertheuserinputsthepartialproductname" finished-at="2023-08-27T20:26:03Z" duration-ms="1203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validatethatproductsaresortedaspertheuserinputsthepartialproductname -->
+        <test-method signature="Validatethatallinitialproductsaredisplayedwhensearchboxisresettedaftersorting()[pri:7, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@413f69cc]" started-at="2023-08-27T20:26:03Z" name="Validatethatallinitialproductsaredisplayedwhensearchboxisresettedaftersorting" finished-at="2023-08-27T20:26:05Z" duration-ms="1107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validatethatallinitialproductsaredisplayedwhensearchboxisresettedaftersorting -->
+        <test-method signature="ValidatethatSorrynoproductsmatchedyoursearchmessageisdisplayedwhenuserentersproductnamewhichisnotavailable()[pri:8, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@413f69cc]" started-at="2023-08-27T20:26:05Z" name="ValidatethatSorrynoproductsmatchedyoursearchmessageisdisplayedwhenuserentersproductnamewhichisnotavailable" finished-at="2023-08-27T20:26:06Z" duration-ms="1097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidatethatSorrynoproductsmatchedyoursearchmessageisdisplayedwhenuserentersproductnamewhichisnotavailable -->
+        <test-method signature="Validatethatwhenuniqueproductareaddedtothecartitemfieldisupdated()[pri:9, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@413f69cc]" started-at="2023-08-27T20:26:06Z" name="Validatethatwhenuniqueproductareaddedtothecartitemfieldisupdated" finished-at="2023-08-27T20:26:49Z" duration-ms="43292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validatethatwhenuniqueproductareaddedtothecartitemfieldisupdated -->
+        <test-method signature="Validatethatwhenduplicateproductareaddedtothecartitemfieldisnotupdated()[pri:10, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@413f69cc]" started-at="2023-08-27T20:26:49Z" name="Validatethatwhenduplicateproductareaddedtothecartitemfieldisnotupdated" finished-at="2023-08-27T20:27:32Z" duration-ms="43216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validatethatwhenduplicateproductareaddedtothecartitemfieldisnotupdated -->
+        <test-method signature="ValidatethatwhenAddtocartlabelchangestoAddedwhenuserclickontheaddtocartbutton()[pri:11, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@413f69cc]" started-at="2023-08-27T20:27:32Z" name="ValidatethatwhenAddtocartlabelchangestoAddedwhenuserclickontheaddtocartbutton" finished-at="2023-08-27T20:28:09Z" duration-ms="36370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidatethatwhenAddtocartlabelchangestoAddedwhenuserclickontheaddtocartbutton -->
+        <test-method signature="ValidatethatAddedlabelchangestoAddtocartaftersometimeofaddingtheproducttocart()[pri:12, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@413f69cc]" started-at="2023-08-27T20:28:09Z" name="ValidatethatAddedlabelchangestoAddtocartaftersometimeofaddingtheproducttocart" finished-at="2023-08-27T20:28:46Z" duration-ms="37405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidatethatAddedlabelchangestoAddtocartaftersometimeofaddingtheproducttocart -->
+        <test-method signature="Validatethatwhenproductareaddedtothecartpricefieldisupdated()[pri:13, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@413f69cc]" started-at="2023-08-27T20:28:46Z" name="Validatethatwhenproductareaddedtothecartpricefieldisupdated" finished-at="2023-08-27T20:29:30Z" duration-ms="44254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Validatethatwhenproductareaddedtothecartpricefieldisupdated -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@d771cc9]" started-at="2023-08-26T19:28:23Z" name="tearDown" finished-at="2023-08-26T19:28:24Z" duration-ms="1205" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@413f69cc]" started-at="2023-08-27T20:29:30Z" name="tearDown" finished-at="2023-08-27T20:29:31Z" duration-ms="642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

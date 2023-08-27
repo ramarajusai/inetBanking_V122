@@ -9,7 +9,8 @@
 	 
 	  <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.inetBanking_V122.TestCases.SearchFunctionaility"/>
+		    <class name="com.inetBanking_V122.TestCases.SearchFunctionaility"/>
+      <class name="com.inetBanking_V122.TestCases.Cart"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite --> 

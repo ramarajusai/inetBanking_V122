@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-26T19:23:20Z" name="Parallel Test Suite" finished-at="2023-08-26T19:24:14Z" duration-ms="54212">
+  <suite started-at="2023-08-27T19:23:22Z" name="Parallel Test Suite" finished-at="2023-08-27T19:24:15Z" duration-ms="53164">
     <groups>
     </groups>
-    <test started-at="2023-08-26T19:23:20Z" name="Test" finished-at="2023-08-26T19:24:14Z" duration-ms="54212">
-      <class name="com.inetBanking_V122.TestCases.SearchFunctionaility">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@6bf08014]" started-at="2023-08-26T19:23:20Z" name="setUp" finished-at="2023-08-26T19:23:25Z" duration-ms="5160" status="PASS">
+    <test started-at="2023-08-27T19:23:22Z" name="Test" finished-at="2023-08-27T19:24:15Z" duration-ms="53164">
+      <class name="com.inetBanking_V122.TestCases.Cart">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.inetBanking_V122.TestCases.Cart@6bf08014]" started-at="2023-08-27T19:23:23Z" name="setUp" finished-at="2023-08-27T19:23:28Z" duration-ms="5627" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Validatethatwhenproductareaddedtothecartpricefieldisupdated()[pri:13, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@6bf08014]" started-at="2023-08-26T19:23:25Z" name="Validatethatwhenproductareaddedtothecartpricefieldisupdated" finished-at="2023-08-26T19:24:10Z" duration-ms="45064" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected:<830> but was:<123>]]>
-            </message>
+        <test-method signature="Validatethatwhenproductareaddedtothecartsameproductdetailsaredisplayedinthecart()[pri:0, instance:com.inetBanking_V122.TestCases.Cart@6bf08014]" started-at="2023-08-27T19:23:28Z" name="Validatethatwhenproductareaddedtothecartsameproductdetailsaredisplayedinthecart" finished-at="2023-08-27T19:24:13Z" duration-ms="45163" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected:<830> but was:<123>
-at org.junit.Assert.fail(Assert.java:88)
-at org.junit.Assert.failNotEquals(Assert.java:743)
-at org.junit.Assert.assertEquals(Assert.java:118)
-at org.junit.Assert.assertEquals(Assert.java:555)
-at org.junit.Assert.assertEquals(Assert.java:542)
-at com.inetBanking_V122.TestCases.SearchFunctionaility.Validatethatwhenproductareaddedtothecartpricefieldisupdated(SearchFunctionaility.java:127)
+              <![CDATA[java.lang.NullPointerException
+at com.inetBanking_V122.TestCases.Cart.Validatethatwhenproductareaddedtothecartsameproductdetailsaredisplayedinthecart(Cart.java:23)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -62,15 +54,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Validatethatwhenproductareaddedtothecartpricefieldisupdated -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetBanking_V122.TestCases.SearchFunctionaility@6bf08014]" started-at="2023-08-26T19:24:10Z" name="tearDown" finished-at="2023-08-26T19:24:14Z" duration-ms="3756" status="PASS">
+        </test-method> <!-- Validatethatwhenproductareaddedtothecartsameproductdetailsaredisplayedinthecart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetBanking_V122.TestCases.Cart@6bf08014]" started-at="2023-08-27T19:24:13Z" name="tearDown" finished-at="2023-08-27T19:24:15Z" duration-ms="2117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.inetBanking_V122.TestCases.SearchFunctionaility -->
+      </class> <!-- com.inetBanking_V122.TestCases.Cart -->
     </test> <!-- Test -->
   </suite> <!-- Parallel Test Suite -->
 </testng-results>
