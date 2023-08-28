@@ -1,6 +1,6 @@
 package com.inetBanking_V122.TestCases;
 
-import org.junit.Assert;
+import org.testng.*;
 import org.testng.annotations.Test;
 
 import com.inetBanking_V122.Listeners.Sleep;
